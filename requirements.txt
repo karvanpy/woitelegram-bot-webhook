@@ -4,12 +4,18 @@ anyio==4.8.0
     # via
     #   httpx
     #   starlette
+blinker==1.9.0
+    # via flask
 certifi==2025.1.31
     # via
     #   httpcore
     #   httpx
 click==8.1.8
-    # via uvicorn
+    # via
+    #   flask
+    #   uvicorn
+flask==3.1.0
+    # via woitelegram-bot (pyproject.toml)
 h11==0.14.0
     # via
     #   httpcore
@@ -22,13 +28,21 @@ idna==3.10
     # via
     #   anyio
     #   httpx
+itsdangerous==2.2.0
+    # via flask
+jinja2==3.1.5
+    # via flask
+markupsafe==3.0.2
+    # via
+    #   jinja2
+    #   werkzeug
 python-telegram-bot==21.10
     # via woitelegram-bot (pyproject.toml)
 sniffio==1.3.1
     # via anyio
 starlette==0.46.0
     # via woitelegram-bot (pyproject.toml)
-typing-extensions==4.12.2
-    # via anyio
 uvicorn==0.34.0
     # via woitelegram-bot (pyproject.toml)
+werkzeug==3.1.3
+    # via flask
