@@ -11,6 +11,10 @@
   ],
   "routes": [
     {
+      "src": "/webhook",
+      "dest": "/webhook"
+    },
+    {
       "src": "/(.*)",
       "dest": "app.py"
     }
