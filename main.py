@@ -149,8 +149,8 @@ async def main() -> None:
     async def health(_: Request) -> PlainTextResponse:
         """For the health endpoint, reply with a simple plain text message."""
         return PlainTextResponse(content="The bot is still running fine :)")
-
-    starlette_app = Starlette(
+    global app
+    app = Starlette(
         routes=[
             Route("/telegram", telegram, methods=["POST"]),
             Route("/healthcheck", health, methods=["GET"]),
